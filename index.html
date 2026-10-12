@@ -158,6 +158,14 @@ h3{font-family:var(--f-disp);font-weight:600;font-size:18px;text-transform:upper
   .sh-head{grid-template-columns:auto minmax(0,1fr)}
   .sh-scale{grid-column:1 / -1;border-left:0;border-top:1px solid var(--ink);flex-direction:row;gap:10px;text-align:left;align-items:baseline}
   .chk{margin-left:0}
+  /* varijanta: jedan red s horizontalnim scrollom da sticky traka ne pojede ekran */
+  .varbar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:16px;padding:8px 12px;overscroll-behavior-x:contain}
+  .varbar::-webkit-scrollbar{display:none}
+  .varbar > *{flex:none}
+  .varbar p{display:none}
+  .vb-t{font-size:16px}
+  .vb-g,.seg{flex-wrap:nowrap}
+  .seg button{white-space:nowrap;padding:7px 10px}
 }
 @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
 </style>
