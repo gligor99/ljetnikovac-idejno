@@ -77,6 +77,8 @@ h1{font-family:var(--f-disp);font-weight:600;font-size:clamp(40px,7vw,72px);line
 .drw .ac{stroke:var(--accent);stroke-width:2.6}
 .drw .kl{stroke:var(--accent);stroke-width:.8}
 .drw .kt{fill:none;stroke:var(--accent);stroke-width:1}
+.drw .ar{stroke:var(--accent);stroke-width:1.6;stroke-linejoin:round}
+.drw .bar{fill:var(--accent)}
 .drw .fSheet{fill:var(--sheet)}
 .drw .fInk{fill:var(--ink)}
 .drw .fAB{fill:var(--ab)}
@@ -207,6 +209,7 @@ h3{font-family:var(--f-disp);font-weight:600;font-size:18px;text-transform:upper
   <a href="#l4"><span>04</span> Presjek A–A</a>
   <a href="#l5"><span>05</span> Izgledi</a>
   <a href="#l6"><span>06</span> Tehnički opis i predmjer</a>
+  <a href="#l7"><span>07</span> Konstrukcija i armatura</a>
 </nav>
 
 <section class="varbar" aria-label="Varijanta projekta">
@@ -355,7 +358,7 @@ h3{font-family:var(--f-disp);font-weight:600;font-size:18px;text-transform:upper
       <section>
         <span class="k">02</span><h3>Konstrukcija</h3>
         <ul>
-          <li>Trakasti AB temelji 50/80 ispod zidova i rubni temelji 30/80 ispod otvorenih strana, temelji samci 50/50/80 ispod stubova.</li>
+          <li>Trakasti AB temelji 50/80 ispod zidova i rubni temelji 30/80 ispod otvorenih strana, temelji samci 60/60/80 ispod stubova. Armatura na listu 07.</li>
           <li>AB ploča 12 cm na PE foliji i šljunku 20 cm, pad poda 1 % prema van.</li>
           <li>Zidovi od bloka 20 cm, pregradni zid od bloka 10 cm, horizontalni i vertikalni AB serklaži.</li>
           <li>AB stubovi 20/20 i grede 20/60 nose atiku nad otvorenim stranama.</li>
@@ -408,7 +411,7 @@ h3{font-family:var(--f-disp);font-weight:600;font-size:18px;text-transform:upper
           <tr><td>Beton</td><td>temelji C25/30</td><td class="n">≈ 8 m³</td></tr>
           <tr><td></td><td>AB ploča 12 cm</td><td class="n">≈ 3 m³</td></tr>
           <tr><td></td><td>stubovi, grede i serklaži</td><td class="n">≈ 3 m³</td></tr>
-          <tr><td></td><td>armatura</td><td class="n">≈ 1.000 kg</td></tr>
+          <tr><td></td><td>armatura B500B, specifikacija na listu 07</td><td class="n">≈ 800 kg</td></tr>
           <tr><td>Zidanje</td><td>blok 20 cm, zidovi i atika</td><td class="n">≈ 42 m²</td></tr>
           <tr><td></td><td>blok 10 cm, pregradni zid</td><td class="n">≈ 3 m²</td></tr>
           <tr><td>Krov</td><td>rogovi 8/16 (9 kom × 3,6 m) i nazidnice 10/10</td><td class="n">≈ 0,5 m³</td></tr>
@@ -429,6 +432,166 @@ h3{font-family:var(--f-disp);font-weight:600;font-size:18px;text-transform:upper
     <p class="foot">Ovo je idejno rješenje za dogovor sa izvođačem i investitorom. Za građevinsku dozvolu treba glavni projekat ovlaštene projektne organizacije, sa statičkim proračunom temelja, greda i atike. Količine u predmjeru su okvirne, ±15 %. Orijentaciju objekta prema strani svijeta treba uskladiti sa parcelom.</p>
   </div>
 </article>
+
+<article class="sheet" id="l7">
+  <div class="sh-head">
+    <div class="sh-no">List<b>07</b></div>
+    <div class="sh-title"><h2>Konstrukcija i armatura</h2><p>Prethodni proračun po EN 1990–1992 za lokaciju Novi Dvorovi, Bijeljina</p></div>
+    <div class="sh-scale">presjeci<b>1:10</b></div>
+  </div>
+  <div class="sh-body">
+    <div class="fig"><svg class="drw" viewBox="0 0 1020 330" role="img" xmlns="http://www.w3.org/2000/svg"><title>Presjeci armature 1:10</title><desc>Poprečni presjeci sa armaturom: trakasti temelj 50/80 sa ankerima vertikalnog serklaža, greda 20/60 ispod atike, stub 20/20, serklaž 20/30, serklaž atike 20/15 i AB ploča 12 cm sa mrežom Q188.</desc>
+      <!-- temelj 50/80 -->
+      <rect x="60" y="30" width="40" height="60" class="hid" />
+      <rect x="22" y="250" width="116" height="10" class="fBet c3" />
+      <rect x="30" y="90" width="100" height="160" class="fSheet c1" />
+      <rect x="40" y="100" width="80" height="140" rx="2" class="ar" />
+      <path d="M68 30V230H88M92 30V226H72" class="ar" />
+      <circle cx="46" cy="106" r="3.5" class="bar" /><circle cx="114" cy="106" r="3.5" class="bar" />
+      <circle cx="46" cy="234" r="3.5" class="bar" /><circle cx="114" cy="234" r="3.5" class="bar" />
+      <text x="80" y="24" class="ta" text-anchor="middle">vert. serklaž</text>
+      <text x="80" y="285" class="tc" text-anchor="middle">TEMELJ 50/80</text>
+      <text x="80" y="301" class="td" text-anchor="middle">4Ø12 · uz. Ø8/25</text>
+      <text x="80" y="316" class="ta" text-anchor="middle">rubni 30/80 isto</text>
+      <!-- greda 20/60 -->
+      <rect x="220" y="40" width="40" height="90" class="hid" />
+      <rect x="220" y="130" width="40" height="120" class="fSheet c1" />
+      <rect x="226" y="136" width="28" height="108" rx="2" class="ar" />
+      <circle cx="231" cy="238" r="3.2" class="bar" /><circle cx="240" cy="238" r="3.2" class="bar" /><circle cx="249" cy="238" r="3.2" class="bar" />
+      <circle cx="231" cy="142" r="3.2" class="bar" /><circle cx="249" cy="142" r="3.2" class="bar" />
+      <circle cx="231" cy="190" r="2.7" class="bar" /><circle cx="249" cy="190" r="2.7" class="bar" />
+      <text x="240" y="34" class="ta" text-anchor="middle">atika</text>
+      <text x="240" y="285" class="tc" text-anchor="middle">GREDA 20/60</text>
+      <text x="240" y="301" class="td" text-anchor="middle">3Ø12 dole · 2Ø12 gore</text>
+      <text x="240" y="316" class="ta" text-anchor="middle">2Ø10 bočno · uz. Ø8/15</text>
+      <!-- stub 20/20 -->
+      <rect x="380" y="210" width="40" height="40" class="fSheet c1" />
+      <rect x="386" y="216" width="28" height="28" rx="2" class="ar" />
+      <circle cx="391" cy="221" r="3.8" class="bar" /><circle cx="409" cy="221" r="3.8" class="bar" />
+      <circle cx="391" cy="239" r="3.8" class="bar" /><circle cx="409" cy="239" r="3.8" class="bar" />
+      <text x="400" y="285" class="tc" text-anchor="middle">STUB 20/20</text>
+      <text x="400" y="301" class="td" text-anchor="middle">4Ø14 · uz. Ø8/10–15</text>
+      <text x="400" y="316" class="ta" text-anchor="middle">preklop 70 cm</text>
+      <!-- serklaž 20/30 -->
+      <rect x="540" y="190" width="40" height="60" class="fSheet c1" />
+      <rect x="546" y="196" width="28" height="48" rx="2" class="ar" />
+      <circle cx="551" cy="201" r="3.5" class="bar" /><circle cx="569" cy="201" r="3.5" class="bar" />
+      <circle cx="551" cy="239" r="3.5" class="bar" /><circle cx="569" cy="239" r="3.5" class="bar" />
+      <text x="560" y="285" class="tc" text-anchor="middle">SERKLAŽ 20/30</text>
+      <text x="560" y="301" class="td" text-anchor="middle">4Ø12 · uz. Ø8/15</text>
+      <text x="560" y="316" class="ta" text-anchor="middle">vertikalni 20/20 isto</text>
+      <!-- serklaž atike 20/15 -->
+      <rect x="700" y="220" width="40" height="30" class="fSheet c1" />
+      <rect x="705" y="225" width="30" height="20" rx="2" class="ar" />
+      <circle cx="710" cy="230" r="2.8" class="bar" /><circle cx="730" cy="230" r="2.8" class="bar" />
+      <circle cx="710" cy="240" r="2.8" class="bar" /><circle cx="730" cy="240" r="2.8" class="bar" />
+      <text x="720" y="285" class="tc" text-anchor="middle">ATIKA 20/15</text>
+      <text x="720" y="301" class="td" text-anchor="middle">4Ø10 · uz. Ø6/20</text>
+      <text x="720" y="316" class="ta" text-anchor="middle">ankeri 2Ø10 / 2 m</text>
+      <!-- ploča 12 cm -->
+      <rect x="810" y="220" width="190" height="6" class="fStone c3" />
+      <rect x="810" y="226" width="190" height="24" class="fSheet c1" />
+      <line x1="814" y1="234" x2="996" y2="234" class="ar" />
+      <circle cx="825" cy="237" r="1.8" class="bar" /><circle cx="855" cy="237" r="1.8" class="bar" /><circle cx="885" cy="237" r="1.8" class="bar" /><circle cx="915" cy="237" r="1.8" class="bar" /><circle cx="945" cy="237" r="1.8" class="bar" /><circle cx="975" cy="237" r="1.8" class="bar" />
+      <rect x="810" y="250" width="190" height="20" class="fSlj c3" />
+      <text x="905" y="285" class="tc" text-anchor="middle">PLOČA 12 cm</text>
+      <text x="905" y="301" class="td" text-anchor="middle">Q188, 4 cm od vrha</text>
+      <text x="905" y="316" class="ta" text-anchor="middle">pod ražnjem 20 cm, 2×Q188</text>
+    </svg></div>
+    <ul class="legend">
+      <li><svg viewBox="0 0 30 16" class="drw"><circle cx="15" cy="8" r="4" class="bar"/></svg>podužna armatura B500B</li>
+      <li><svg viewBox="0 0 30 16" class="drw"><line x1="1" y1="8" x2="29" y2="8" class="ar"/></svg>uzengije, ankeri, mreža</li>
+      <li><svg viewBox="0 0 30 16" class="drw"><line x1="1" y1="8" x2="29" y2="8" class="hid"/></svg>element iznad (atika, serklaž)</li>
+    </ul>
+
+    <div class="opis">
+      <section>
+        <span class="k">01</span><h3>Ulazni podaci</h3>
+        <ul>
+          <li>Lokacija Novi Dvorovi, Bijeljina, oko 90 m nadmorske visine.</li>
+          <li>Snijeg s<sub>k</sub> = 1,50 kN/m², na krovu 1,20 kN/m². Uzeto na sigurnu stranu.</li>
+          <li>Krov: lim, daske, rogovi i lambrija 0,50 kN/m².</li>
+          <li>Tlo: oranica, ispod ilovača do 2–2,5 m, zatim šljunak. Usvojeno dozvoljeno opterećenje ilovače 100 kPa.</li>
+          <li>Beton C25/30, armatura B500B, drvo C24.</li>
+          <li>Bijeljina je seizmički aktivno područje. Zato su svi zidovi uokvireni serklažima i grede su u zatvorenom vijencu.</li>
+        </ul>
+      </section>
+      <section>
+        <span class="k">02</span><h3>Rezultati proračuna</h3>
+        <ul>
+          <li>Prednja greda, raspon 4,25 m: q<sub>Ed</sub> = 10,6 kN/m, M<sub>Ed</sub> = 24 kNm, potrebno 1,06 cm², minimum 1,49 cm². Usvojeno 3Ø12 = 3,39 cm².</li>
+          <li>Ista greda na smicanje: V<sub>Ed</sub> = 23 kN &lt; V<sub>Rd,c</sub> = 39 kN, dovoljne minimalne uzengije.</li>
+          <li>Bočna greda, raspon 3,80 m: M<sub>Ed</sub> = 13 kNm, mjerodavan minimum, ista armatura.</li>
+          <li>Stub: N<sub>Ed</sub> = 39 kN, nosivost presjeka oko 570 kN.</li>
+          <li>Rog 8/16: napon 8,2 od 16,6 MPa, ugib 9 mm (L/415).</li>
+          <li>Tlo ispod zidova 46 kPa. Ispod samca 50/50 bilo bi 134 kPa, zato je samac povećan na 60/60: 99 kPa.</li>
+        </ul>
+      </section>
+      <section>
+        <span class="k">03</span><h3>Temelji i tlo</h3>
+        <ul>
+          <li>Humus skinuti u cijeloj debljini, i ispod temelja i ispod ploče.</li>
+          <li>Dno temelja u zdravoj ilovači, najmanje 80 cm ispod terena (dubina smrzavanja).</li>
+          <li>Ilovača omekša od vode: iskop ne ostavljati na kiši, odmah sipati mršavi beton C12/15, 5 cm.</li>
+          <li>Ako je dno iskopa raskvašeno, meki sloj zamijeniti betonom ili zbijenim šljunkom.</li>
+          <li>Tampon ispod ploče 20 cm, zbijati u dva sloja.</li>
+          <li>Ražanj sa dimnjakom je težak: ploču ispod njega podebljati na 20 cm sa dvije mreže i povezati sa zadnjim temeljem.</li>
+        </ul>
+      </section>
+      <section>
+        <span class="k">04</span><h3>Armatura po elementima</h3>
+        <ul>
+          <li>Temelji 50/80 i 30/80: 4Ø12, uzengije Ø8/25. Samci 60/60/80: mreža Ø10/15 dole.</li>
+          <li>Iz temelja ostaviti ankere za stubove 4Ø14 i za vertikalne serklaže 4Ø12, preklop 70 cm odnosno 60 cm.</li>
+          <li>Stubovi 20/20: 4Ø14, uzengije Ø8/10 na 50 cm uz krajeve, Ø8/15 u sredini.</li>
+          <li>Grede 20/60: 3Ø12 dole, 2Ø12 gore, 2Ø10 bočno, uzengije Ø8/15 (Ø8/10 na 60 cm uz oslonce). Ankerovati ih 40 cm u zid i serklaže.</li>
+          <li>Serklaži 20/30 horizontalni i 20/20 vertikalni (na svim uglovima, spojevima zidova i kraju zadnjeg zida): 4Ø12, uzengije Ø8/15.</li>
+          <li>Nadvoji iznad vrata i prozora 20/20: 4Ø10, uzengije Ø6/15, oslonac 25 cm.</li>
+          <li>Serklaž atike 20/15: 4Ø10, uzengije Ø6/20. Za gredu vezan ankerima 2Ø10 na svaka 2 m i na uglovima.</li>
+        </ul>
+      </section>
+      <section>
+        <span class="k">05</span><h3>Ankerisanje krova</h3>
+        <ul>
+          <li>Krov od lima je lagan i vjetar ga diže: oko 0,6 kN/m², odnosno oko 0,8 kN na svakom kraju roga.</li>
+          <li>Nazidnica 10/10: ankeri M12 na 100 cm, ugrađeni u gredu ili serklaž pri betoniranju.</li>
+          <li>Svaki rog vezati za nazidnicu čeličnim ugaonikom i ankerskim vijcima, ne samo ekserima.</li>
+        </ul>
+      </section>
+      <section>
+        <span class="k">06</span><h3>Izvođenje</h3>
+        <ul>
+          <li>Zaštitni sloj betona: temelji 5 cm, grede, stubovi i serklaži 3 cm, ploča 3 cm.</li>
+          <li>Koristiti distancere. Beton vibrirati i 7 dana ga vlažiti.</li>
+          <li>Preklop šipki je 50Ø i nastavci se smiču, ne nastavljati sve šipke na istom mjestu.</li>
+          <li>Na uglovima i spojevima vijenca ugaone šipke „L“ preklopiti u oba pravca.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="tbl">
+      <h3>Specifikacija armature B500B</h3>
+      <table>
+        <thead><tr><th>Element</th><th>Armatura</th><th class="n">Dužina</th><th class="n">Masa</th></tr></thead>
+        <tbody>
+          <tr><td>Trakasti temelji 50/80</td><td>4Ø12, Ø8/25</td><td class="n">≈ 15 m</td><td class="n">≈ 130 kg</td></tr>
+          <tr><td>Rubni temelji 30/80, samci 60/60</td><td>4Ø12, Ø8/25, mreža Ø10/15</td><td class="n">≈ 8 m</td><td class="n">≈ 70 kg</td></tr>
+          <tr><td>AB ploča 12 cm</td><td>Q188, ispod ražnja 2×Q188</td><td class="n">≈ 27 m²</td><td class="n">≈ 95 kg</td></tr>
+          <tr><td>Stubovi 20/20</td><td>4Ø14, Ø8/10–15</td><td class="n">2 × 3,7 m</td><td class="n">≈ 60 kg</td></tr>
+          <tr><td>Grede 20/60</td><td>5Ø12 + 2Ø10, Ø8/15</td><td class="n">≈ 10,5 m</td><td class="n">≈ 115 kg</td></tr>
+          <tr><td>Horizontalni serklaži 20/30</td><td>4Ø12, Ø8/15</td><td class="n">≈ 14 m</td><td class="n">≈ 95 kg</td></tr>
+          <tr><td>Vertikalni serklaži 20/20</td><td>4Ø12, Ø8/15</td><td class="n">6 × 3,8 m</td><td class="n">≈ 140 kg</td></tr>
+          <tr><td>Nadvoji 20/20</td><td>4Ø10, Ø6/15</td><td class="n">3 × 1,2 m</td><td class="n">≈ 15 kg</td></tr>
+          <tr><td>Serklaž atike 20/15 i ankeri</td><td>4Ø10, Ø6/20, 2Ø10/2 m</td><td class="n">≈ 20 m</td><td class="n">≈ 85 kg</td></tr>
+          <tr class="sum"><td>Ukupno</td><td>sa preklopima i otpadom ≈ 10 %</td><td class="n"></td><td class="n">≈ 800 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="foot">Ovo je prethodni proračun za ovaj nivo projekta i služi kao osnova za dogovor sa izvođačem. Glavni projekat i ovjeru i dalje radi ovlašteni statičar. On treba potvrditi snijeg i seizmičku zonu (a<sub>gR</sub>) za lokaciju po važećim nacionalnim prilozima, bočnu stabilnost otvorenog ugla sa dva stuba, kao i nosivost tla, po mogućnosti uz kratak geomehanički nalaz.</p>
+  </div>
+</article>
+
 
 </div>
 
